@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portofolio & Klien | Askarindo Group</title>
+  <meta name="description"
+    content="100+ klien terpercaya dari instansi pemerintah, lembaga pendidikan, dan perusahaan swasta telah mempercayai Askarindo Group.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/css/main.css">
+</head>
+
+<body data-page="portfolio" class="bg-canvas">
+
+  <!-- Top Nav -->
+  <header class="fixed top-0 left-0 right-0 z-50 h-18 bg-white shadow-md transition-all duration-300">
+    <div class="container-custom h-full">
+      <nav class="flex items-center justify-between h-full">
+        <a href="/index.html" class="flex items-center gap-3">
+          <img src="/images/logos/logoaskarindo1-removebg-preview.png" alt="Askarindo Group" class="h-8 w-auto">
+          <span class="font-nav font-bold text-[17px] text-primary max-md:hidden">PT Askarindo Group</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-5 lg:gap-7" text-sm>
+          <a href="/index.html"
+            class="relative text-body/80 font-nav font-medium transition-colors hover:text-secondary pb-0.5 text-sm">Home</a>
+          <a href="/pages/about.html"
+            class="relative text-body/80 font-nav font-medium transition-colors hover:text-secondary pb-0.5 text-sm">Tentang</a>
+          <a href="/pages/produk.html"
+            class="relative text-body/80 font-nav font-medium transition-colors hover:text-secondary pb-0.5 text-sm">Produk</a>
+          <a href="/pages/portfolio.html" class="relative text-body font-nav font-medium pb-0.5 text-sm">
+            Portofolio
+            <span class="active-nav-indicator"></span>
+          </a>
+          <a href="/pages/contact.html"
+            class="relative text-body/80 font-nav font-medium transition-colors hover:text-secondary pb-0.5 text-sm">Kontak</a>
+        </div>
+
+        <button x-data @click="$dispatch('toggle-mobile-menu')" class="md:hidden text-body">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div x-data="mobileMenu" x-show="open" x-transition.opacity class="fixed inset-0 z-40 bg-canvas md:hidden">
+    <div class="container-custom pt-24">
+      <button @click="close()" class="absolute top-6 right-6 text-body">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      <nav class="flex flex-col gap-5 text-base font-nav">
+        <a @click="close()" href="/index.html" class="text-body font-nav font-medium">Home</a>
+        <a @click="close()" href="/pages/about.html" class="text-body font-nav font-medium">Tentang</a>
+        <a @click="close()" href="/pages/produk.html" class="text-body font-nav font-medium">Produk</a>
+        <a @click="close()" href="/pages/portfolio.html" class="text-body font-nav font-medium">Portofolio</a>
+        <a @click="close()" href="/pages/contact.html" class="text-body font-nav font-medium">Kontak</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="relative pt-28 pb-20 overflow-hidden mt-18 bg-primary">
+    <div class="absolute inset-0">
+      <img src="/images/slider/WhatsApp Image 2026-03-18 at 21.29.59.jpeg" alt="" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-primary/60"></div>
+    </div>
+    <div class="container-custom relative z-10">
+      <span class="eyebrow text-on-primary/80">Portofolio & Klien</span>
+      <div class="accent-divider mt-4 mb-6"></div>
+      <h1 class="text-display-lg text-on-primary">Dipercaya 100+ Instansi</h1>
+      <p class="text-body-md text-on-primary/80 max-w-2xl mt-4">Dipercaya 100+ instansi dan perusahaan di Indonesia</p>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="bg-surface-elevated">
+    <div class="container-custom">
+      <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-hairline">
+        <div class="flex-1 py-6 md:py-10 lg:py-14 text-center reveal">
+          <div class="text-display-sm text-primary font-bold">100+</div>
+          <div class="text-label-uppercase text-muted mt-2">Klien Terpercaya</div>
+        </div>
+        <div class="flex-1 py-6 md:py-10 lg:py-14 text-center reveal">
+          <div class="text-display-sm text-primary font-bold">500+</div>
+          <div class="text-label-uppercase text-muted mt-2">Proyek Selesai</div>
+        </div>
+        <div class="flex-1 py-6 md:py-10 lg:py-14 text-center reveal">
+          <div class="text-display-sm text-primary font-bold">8</div>
+          <div class="text-label-uppercase text-muted mt-2">Kategori Solusi</div>
+        </div>
+        <div class="flex-1 py-6 md:py-10 lg:py-14 text-center reveal">
+          <div class="text-display-sm text-primary font-bold">95%</div>
+          <div class="text-label-uppercase text-muted mt-2">Kepuasan Klien</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider"></div>
+
+  <!-- Masonry Portfolio Gallery (Pinterest Style) -->
+  <section class="section-padding bg-canvas min-h-screen">
+    <div class="container-custom">
+      <!-- Section Intro -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16 reveal">
+        <div class="max-w-2xl">
+          <span class="eyebrow">Galeri Visual</span>
+          <div class="accent-divider mt-4 mb-6"></div>
+          <h2 class="text-display-md text-primary font-bold mb-4">Karya & Instalasi Kami</h2>
+          <p class="text-body-md text-muted leading-relaxed">Mendokumentasikan dedikasi Askarindo Group dalam
+            menghadirkan solusi teknologi cerdas dan terintegrasi untuk pendidikan, pemerintahan, serta korporasi.</p>
+        </div>
+        <div class="hidden md:block text-right shrink-0">
+          <div class="h-[1px] w-12 bg-primary ml-auto mb-4"></div>
+          <p class="text-label-uppercase text-muted">Klik foto untuk memperbesar</p>
+        </div>
+      </div>
+
+      <div class="masonry-grid">
+
+        <!-- Item 1 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.46.jpeg" alt="Portofolio 1">
+        </div>
+
+        <!-- Item 2 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.47 (1).jpeg" alt="Portofolio 2">
+        </div>
+
+        <!-- Item 3 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.47.jpg" alt="Portofolio 3">
+        </div>
+
+        <!-- Item 4 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.48 (1).jpeg" alt="Portofolio 4">
+        </div>
+
+        <!-- Item 5 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.48 (2).jpeg" alt="Portofolio 5">
+        </div>
+
+        <!-- Item 6 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.48.jpeg" alt="Portofolio 6">
+        </div>
+
+        <!-- Item 7 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.49 (1).jpeg" alt="Portofolio 7">
+        </div>
+
+        <!-- Item 8 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.49.jpeg" alt="Portofolio 8">
+        </div>
+
+        <!-- Item 9 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.50 (1).jpeg" alt="Portofolio 9">
+        </div>
+
+        <!-- Item 10 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.50 (2).jpeg" alt="Portofolio 10">
+        </div>
+
+        <!-- Item 11 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.50.jpeg" alt="Portofolio 11">
+        </div>
+
+        <!-- Item 12 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.51 (1).jpeg" alt="Portofolio 12">
+        </div>
+
+        <!-- Item 13 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.51 (2).jpeg" alt="Portofolio 13">
+        </div>
+
+        <!-- Item 14 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.51.jpeg" alt="Portofolio 14">
+        </div>
+
+        <!-- Item 15 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.52 (1).jpeg" alt="Portofolio 15">
+        </div>
+
+        <!-- Item 16 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.52 (2).jpeg" alt="Portofolio 16">
+        </div>
+
+        <!-- Item 17 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.52.jpeg" alt="Portofolio 17">
+        </div>
+
+        <!-- Item 18 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.53 (1).jpeg" alt="Portofolio 18">
+        </div>
+
+        <!-- Item 19 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/WhatsApp Image 2026-03-16 at 13.46.53.jpeg" alt="Portofolio 19">
+        </div>
+
+        <!-- Item 20 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/adff1732-99a1-4b39-83bf-4bba3fba0059.jpg" alt="Portofolio 20">
+        </div>
+
+        <!-- Item 21 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/ee19ac3e-d9d5-488d-ade3-477320906f64.jpg" alt="Portofolio 21">
+        </div>
+
+        <!-- Item 22 -->
+        <div class="masonry-item">
+          <img src="/images/portofolio/image.png" alt="Portofolio 22">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Overlay -->
+  <div x-data="portfolioLightbox" x-show="open" x-transition.opacity.duration.300ms @keydown.escape.window="close()"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 md:p-8"
+    style="display: none;">
+    <button @click="close()"
+      class="absolute top-4 right-4 md:top-6 md:right-6 p-2 text-white/60 hover:text-white transition-colors z-10">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    <button @click="prev()"
+      class="absolute left-3 md:left-6 p-3 text-white/60 hover:text-white transition-colors z-10 bg-black/20 hover:bg-black/40 rounded-full">
+      <svg class="w-6 h-6 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </button>
+    <button @click="next()"
+      class="absolute right-3 md:right-6 p-3 text-white/60 hover:text-white transition-colors z-10 bg-black/20 hover:bg-black/40 rounded-full">
+      <svg class="w-6 h-6 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+    <img :src="currentSrc" alt="" class="max-h-[85vh] max-w-full object-contain rounded-lg shadow-2xl">
+  </div>
+
+  <!-- CTA Section -->
+  <section class="bg-primary py-20 lg:py-24">
+    <div class="container-custom text-center reveal">
+      <span class="eyebrow text-on-primary/80">Siap Berkolaborasi?</span>
+      <div class="accent-divider mt-4 mb-6 mx-auto"
+        style="--tw-gradient-from: rgba(255,255,255,0.6); --tw-gradient-to: rgba(255,255,255,0.2);"></div>
+      <h2 class="text-display-md text-on-primary font-bold mb-4">Wujudkan Proyek Anda Bersama Kami</h2>
+      <p class="text-body-md text-on-primary/70 max-w-2xl mx-auto mb-10 leading-relaxed">Konsultasikan kebutuhan
+        teknologi Anda dan dapatkan solusi terintegrasi dari tim profesional Askarindo Group.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/pages/contact.html" class="btn-on-dark inline-flex items-center justify-center gap-2">
+          Hubungi Kami
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+        <a href="https://wa.me/6285854542007" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-7 py-3.5 text-[15px] font-semibold text-white border-2 border-white/30 hover:bg-white hover:text-primary transition-all duration-300">
+          WhatsApp Langsung
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logo Marquee — Social Proof -->
+  <section class="bg-primary overflow-hidden border-t border-white/10"
+    style="mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);">
+    <div class="max-w-7xl mx-auto px-4 py-4 md:py-6">
+      <div class="marquee-wrapper overflow-hidden">
+        <div class="marquee-track items-center gap-12 md:gap-20">
+          <img src="/images/e-commerce/Logo Bela Gratis Ongkir.webp" alt="Bela Gratis Ongkir"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo Blangkon Jateng.webp" alt="Blangkon Jateng"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo Digipay.webp" alt="Digipay"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo Inaproc.webp" alt="Inaproc"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo MbizM.webp" alt="MbizM"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo PadiUMKM.webp" alt="PaDi UMKM"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo Siplah Blibli.webp" alt="SIPlah Blibli"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo Siplah Tokoladang.webp" alt="SIPlah Tokoladang"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <!-- Duplicated for seamless loop -->
+          <img src="/images/e-commerce/Logo Bela Gratis Ongkir.webp" alt="Bela Gratis Ongkir"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo Blangkon Jateng.webp" alt="Blangkon Jateng"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo Digipay.webp" alt="Digipay"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo Inaproc.webp" alt="Inaproc"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo MbizM.webp" alt="MbizM"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo PadiUMKM.webp" alt="PaDi UMKM"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo Siplah Blibli.webp" alt="SIPlah Blibli"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/Logo Siplah Tokoladang.webp" alt="SIPlah Tokoladang"
+            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary pt-16 pb-6 text-on-primary">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-10">
+        <div class="md:col-span-5 reveal">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="/images/logos/logoaskarindo1-removebg-preview.png" alt="Askarindo Group"
+              class="h-8 w-auto brightness-0 invert">
+          </div>
+          <p class="text-body-sm text-on-primary/60 leading-relaxed max-w-sm">Integrated Procurement Digital Business &
+            Technology Solutions. Mitra terpercaya untuk solusi teknologi terintegrasi.</p>
+        </div>
+        <div class="md:col-span-3 reveal">
+          <h4 class="text-title-md text-on-primary font-semibold mb-5">Menu</h4>
+          <div class="space-y-3 text-body-sm text-on-primary/60">
+            <a href="/index.html" class="block hover:text-on-primary transition-colors">Home</a>
+            <a href="/pages/about.html" class="block hover:text-on-primary transition-colors">Tentang Kami</a>
+            <a href="/pages/produk.html" class="block hover:text-on-primary transition-colors">Produk</a>
+            <a href="/pages/portfolio.html" class="block hover:text-on-primary transition-colors">Portofolio</a>
+            <a href="/pages/contact.html" class="block hover:text-on-primary transition-colors">Kontak</a>
+          </div>
+        </div>
+        <div class="md:col-span-4 reveal">
+          <h4 class="text-title-md text-on-primary font-semibold mb-5">Kontak</h4>
+          <div class="space-y-4 text-body-sm text-on-primary/60">
+            <div class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-on-primary/50 mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <div>
+                <p>Jl. Rungkut Asri Utara XX RL III K9</p>
+                <p class="text-on-primary/40">Kali Rungkut, Kec. Rungkut, Surabaya, Jawa Timur 60293</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-on-primary/50 mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                </path>
+              </svg>
+              <div>
+                <a href="https://wa.me/6285854542007" class="hover:text-on-primary transition-colors">0858-5454-2007</a>
+                <p class="text-on-primary/40">WhatsApp</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-on-primary/50 mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                </path>
+              </svg>
+              <div>
+                <a href="mailto:askarindointegrasigroup@gmail.com"
+                  class="hover:text-on-primary transition-colors break-all">askarindointegrasigroup@gmail.com</a>
+                <p class="text-on-primary/40">Email</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Instansi Logo Strip -->
+      <div class="border-t border-on-primary/10 pt-8 pb-4 mb-2">
+        <p class="text-caption text-on-primary/30 uppercase tracking-widest mb-5 text-center">Klien &amp; Mitra Instansi
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8">
+          <img src="/images/instansi/Logo Komdigi.webp" alt="Komdigi"
+            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
+          <img src="/images/instansi/Logo Kemenag.webp" alt="Kemenag"
+            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
+          <img src="/images/instansi/Logo Polri.webp" alt="Polri"
+            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
+          <img src="/images/instansi/Logo BUMN.webp" alt="BUMN"
+            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
+          <img src="/images/instansi/Logo Angkasa Pura.webp" alt="Angkasa Pura"
+            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
+          <img src="/images/instansi/Logo Bank BCA.webp" alt="Bank BCA"
+            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
+          <img src="/images/instansi/Logo BPJS Kesehatan.webp" alt="BPJS Kesehatan"
+            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
+          <img src="/images/instansi/Logo Astra.webp" alt="Astra"
+            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
+        </div>
+      </div>
+      <div
+        class="border-t border-on-primary/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-caption text-on-primary/40">
+        <p>&copy; 2026 Askarindo Group. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>

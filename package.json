@@ -1,0 +1,24 @@
+{
+  "name": "compro",
+  "version": "1.0.0",
+  "description": "Askarindo Group Company Profile Website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.5.2",
+    "postcss": "^8.5.16",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^3.4.19",
+    "vite": "^8.1.4"
+  },
+  "dependencies": {
+    "alpinejs": "^3.14.3"
+  }
+}
