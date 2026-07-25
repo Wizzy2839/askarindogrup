@@ -40,12 +40,22 @@ Alpine.data('contactForm', () => ({
   submitForm() {
     const { name, company, email, phone, message } = this.formData
 
-    const waMessage = `*Konsultasi dari Website*%0A%0A` +
-      `Nama: ${encodeURIComponent(name)}%0A` +
-      `Instansi/Perusahaan: ${encodeURIComponent(company)}%0A` +
-      `Email: ${encodeURIComponent(email)}%0A` +
-      `WhatsApp: ${encodeURIComponent(phone)}%0A` +
-      `Kebutuhan: ${encodeURIComponent(message)}`
+    const messageTemplate = `Halo Tim Askarindo Group,
+
+Saya ingin berkonsultasi mengenai kebutuhan teknologi. Berikut data diri saya:
+
+*Data Kontak*
+- Nama: ${name}
+- Instansi/Perusahaan: ${company || '-'}
+- Email: ${email}
+- No. WhatsApp: ${phone}
+
+*Kebutuhan/Pesan:*
+${message}
+
+Mohon informasi lebih lanjut. Terima kasih.`;
+
+    const waMessage = encodeURIComponent(messageTemplate);
 
     window.open(`https://wa.me/6285854542007?text=${waMessage}`, '_blank')
 
