@@ -48,7 +48,6 @@ Saya ingin berkonsultasi mengenai kebutuhan teknologi. Berikut data diri saya:
 - Nama: ${name}
 - Instansi/Perusahaan: ${company || '-'}
 - Email: ${email}
-- No. WhatsApp: ${phone}
 
 *Kebutuhan/Pesan:*
 ${message}
