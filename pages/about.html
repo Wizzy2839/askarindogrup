@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="../src/css/main.css">
+  <link rel="stylesheet" href="/src/css/main.css">
 </head>
 
 <body data-page="about" class="bg-canvas">
@@ -23,23 +23,23 @@
   <header class="fixed top-0 left-0 right-0 z-50 h-18 bg-white shadow-md transition-all duration-300">
     <div class="container-custom h-full">
       <nav class="flex items-center justify-between h-full">
-        <a href="../index.html" class="flex items-center gap-3">
-          <img src="../images/logos/logoaskarindo1-removebg-preview.png" alt="Askarindo Group" class="h-8 w-auto">
+        <a href="/" class="flex items-center gap-3">
+          <img src="/images/logos/logoaskarindo1-removebg-preview.png" alt="Askarindo Group" class="h-8 w-auto">
           <span class="font-nav font-bold text-[17px] text-primary max-md:hidden">PT Askarindo Group</span>
         </a>
 
         <div class="hidden md:flex items-center gap-5 lg:gap-7" text-sm>
-          <a href="../index.html"
+          <a href="/"
             class="relative text-body/80 font-nav font-medium transition-colors hover:text-secondary pb-0.5 text-sm">Home</a>
-          <a href="about.html" class="relative text-body font-nav font-medium pb-0.5 text-sm">
+          <a href="/pages/about.html" class="relative text-body font-nav font-medium pb-0.5 text-sm">
             Tentang
             <span class="active-nav-indicator"></span>
           </a>
-          <a href="produk.html"
+          <a href="/pages/produk.html"
             class="relative text-body/80 font-nav font-medium transition-colors hover:text-secondary pb-0.5 text-sm">Produk</a>
-          <a href="portfolio.html"
+          <a href="/pages/portfolio.html"
             class="relative text-body/80 font-nav font-medium transition-colors hover:text-secondary pb-0.5 text-sm">Portofolio</a>
-          <a href="contact.html"
+          <a href="/pages/contact.html"
             class="relative text-body/80 font-nav font-medium transition-colors hover:text-secondary pb-0.5 text-sm">Kontak</a>
         </div>
 
@@ -61,11 +61,11 @@
         </svg>
       </button>
       <nav class="flex flex-col gap-5 text-base font-nav">
-        <a @click="close()" href="../index.html" class="text-body font-nav font-medium">Home</a>
-        <a @click="close()" href="about.html" class="text-body font-nav font-medium">Tentang</a>
-        <a @click="close()" href="produk.html" class="text-body font-nav font-medium">Produk</a>
-        <a @click="close()" href="portfolio.html" class="text-body font-nav font-medium">Portofolio</a>
-        <a @click="close()" href="contact.html" class="text-body font-nav font-medium">Kontak</a>
+        <a @click="close()" href="/" class="text-body font-nav font-medium">Home</a>
+        <a @click="close()" href="/pages/about.html" class="text-body font-nav font-medium">Tentang</a>
+        <a @click="close()" href="/pages/produk.html" class="text-body font-nav font-medium">Produk</a>
+        <a @click="close()" href="/pages/portfolio.html" class="text-body font-nav font-medium">Portofolio</a>
+        <a @click="close()" href="/pages/contact.html" class="text-body font-nav font-medium">Kontak</a>
       </nav>
     </div>
   </div>
@@ -73,7 +73,7 @@
   <!-- Page Header -->
   <section class="relative pt-28 pb-20 overflow-hidden mt-18 bg-primary">
     <div class="absolute inset-0">
-      <img src="../images/slider/Gemini_Generated_Image_n49kg6n49kg6n49k.png" alt="" class="w-full h-full object-cover">
+      <img src="/images/slider/Gemini_Generated_Image_n49kg6n49kg6n49k.png" alt="" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-primary/60"></div>
     </div>
     <div class="container-custom relative z-10">
@@ -130,7 +130,7 @@
       <!-- Visi & Misi -->
       <div class="grid md:grid-cols-2 gap-8 mb-24">
         <div class="relative min-h-[460px] md:min-h-[520px] overflow-hidden group reveal">
-          <img src="../images/visimisi/pexels-shvetsa-4226122.jpg.jpeg" alt=""
+          <img src="/images/visimisi/pexels-shvetsa-4226122.jpg.jpeg" alt=""
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
           <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-primary/20"></div>
           <div class="relative z-10 p-8 md:p-10 lg:p-14 flex flex-col justify-end h-full">
@@ -154,7 +154,7 @@
 
         <div class="flex flex-col min-h-[460px] md:min-h-[520px] overflow-hidden group reveal">
           <div class="relative h-44 md:h-48 overflow-hidden">
-            <img src="../images/visimisi/pexels-yankrukov-7793687.jpg.jpeg" alt=""
+            <img src="/images/visimisi/pexels-yankrukov-7793687.jpg.jpeg" alt=""
               class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
           </div>
           <div class="flex-1 bg-surface-soft p-8 md:p-10 lg:p-14">
@@ -261,37 +261,37 @@
         <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-4">
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Komdigi.webp" alt="Komdigi"
+            <img src="/images/instansi/Logo Komdigi.webp" alt="Komdigi"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Kemenag.webp" alt="Kementerian Agama"
+            <img src="/images/instansi/Logo Kemenag.webp" alt="Kementerian Agama"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Kemenhan.webp" alt="Kementerian Pertahanan"
+            <img src="/images/instansi/Logo Kemenhan.webp" alt="Kementerian Pertahanan"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Kementerian Kesehatan.webp" alt="Kementerian Kesehatan"
+            <img src="/images/instansi/Logo Kementerian Kesehatan.webp" alt="Kementerian Kesehatan"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Kementrian Sosial.webp" alt="Kementerian Sosial"
+            <img src="/images/instansi/Logo Kementrian Sosial.webp" alt="Kementerian Sosial"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Polri.webp" alt="Polri"
+            <img src="/images/instansi/Logo Polri.webp" alt="Polri"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo BPOM.webp" alt="BPOM"
+            <img src="/images/instansi/Logo BPOM.webp" alt="BPOM"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
         </div>
@@ -303,22 +303,22 @@
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Dinas Pendidikan.webp" alt="Dinas Pendidikan"
+            <img src="/images/instansi/Logo Dinas Pendidikan.webp" alt="Dinas Pendidikan"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Disnaker.webp" alt="Disnaker"
+            <img src="/images/instansi/Logo Disnaker.webp" alt="Disnaker"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Ristekdikti.webp" alt="Ristekdikti"
+            <img src="/images/instansi/Logo Ristekdikti.webp" alt="Ristekdikti"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo BKD.webp" alt="BKD"
+            <img src="/images/instansi/Logo BKD.webp" alt="BKD"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
         </div>
@@ -330,27 +330,27 @@
         <div class="grid grid-cols-3 sm:grid-cols-5 gap-4">
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo BUMN.webp" alt="BUMN"
+            <img src="/images/instansi/Logo BUMN.webp" alt="BUMN"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Angkasa Pura.webp" alt="Angkasa Pura"
+            <img src="/images/instansi/Logo Angkasa Pura.webp" alt="Angkasa Pura"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo POS Indonesia.webp" alt="POS Indonesia"
+            <img src="/images/instansi/Logo POS Indonesia.webp" alt="POS Indonesia"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Taspen.webp" alt="Taspen"
+            <img src="/images/instansi/Logo Taspen.webp" alt="Taspen"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Kimia Farma.webp" alt="Kimia Farma"
+            <img src="/images/instansi/Logo Kimia Farma.webp" alt="Kimia Farma"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
         </div>
@@ -362,32 +362,32 @@
         <div class="grid grid-cols-3 sm:grid-cols-6 gap-4">
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Bank Jatim.webp" alt="Bank Jatim"
+            <img src="/images/instansi/Bank Jatim.webp" alt="Bank Jatim"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Bank BCA.webp" alt="Bank BCA"
+            <img src="/images/instansi/Logo Bank BCA.webp" alt="Bank BCA"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo CIMB Niaga.webp" alt="CIMB Niaga"
+            <img src="/images/instansi/Logo CIMB Niaga.webp" alt="CIMB Niaga"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo BPJS Kesehatan.webp" alt="BPJS Kesehatan"
+            <img src="/images/instansi/Logo BPJS Kesehatan.webp" alt="BPJS Kesehatan"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo BPJS Ketenagakerjaan.webp" alt="BPJS Ketenagakerjaan"
+            <img src="/images/instansi/Logo BPJS Ketenagakerjaan.webp" alt="BPJS Ketenagakerjaan"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
           <div
             class="bg-white/40 group flex items-center justify-center p-4 h-20 md:h-24 transition-all duration-300 hover:bg-white hover:shadow-sm">
-            <img src="../images/instansi/Logo Astra.webp" alt="Astra"
+            <img src="/images/instansi/Logo Astra.webp" alt="Astra"
               class="max-h-10 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
           </div>
         </div>
@@ -405,38 +405,38 @@
     <div class="max-w-7xl mx-auto px-4 py-4 md:py-6">
       <div class="marquee-wrapper overflow-hidden">
         <div class="marquee-track items-center gap-12 md:gap-20">
-          <img src="../images/e-commerce/Logo Bela Gratis Ongkir.webp" alt="Bela Gratis Ongkir"
+          <img src="/images/e-commerce/Logo Bela Gratis Ongkir.webp" alt="Bela Gratis Ongkir"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo Blangkon Jateng.webp" alt="Blangkon Jateng"
+          <img src="/images/e-commerce/Logo Blangkon Jateng.webp" alt="Blangkon Jateng"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo Digipay.webp" alt="Digipay"
+          <img src="/images/e-commerce/Logo Digipay.webp" alt="Digipay"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo Inaproc.webp" alt="Inaproc"
+          <img src="/images/e-commerce/Logo Inaproc.webp" alt="Inaproc"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo MbizM.webp" alt="MbizM"
+          <img src="/images/e-commerce/Logo MbizM.webp" alt="MbizM"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo PadiUMKM.webp" alt="PaDi UMKM"
+          <img src="/images/e-commerce/Logo PadiUMKM.webp" alt="PaDi UMKM"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo Siplah Blibli.webp" alt="SIPlah Blibli"
+          <img src="/images/e-commerce/Logo Siplah Blibli.webp" alt="SIPlah Blibli"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo Siplah Tokoladang.webp" alt="SIPlah Tokoladang"
+          <img src="/images/e-commerce/Logo Siplah Tokoladang.webp" alt="SIPlah Tokoladang"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
           <!-- Duplicated for seamless loop -->
-          <img src="../images/e-commerce/Logo Bela Gratis Ongkir.webp" alt="Bela Gratis Ongkir"
+          <img src="/images/e-commerce/Logo Bela Gratis Ongkir.webp" alt="Bela Gratis Ongkir"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo Blangkon Jateng.webp" alt="Blangkon Jateng"
+          <img src="/images/e-commerce/Logo Blangkon Jateng.webp" alt="Blangkon Jateng"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo Digipay.webp" alt="Digipay"
+          <img src="/images/e-commerce/Logo Digipay.webp" alt="Digipay"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo Inaproc.webp" alt="Inaproc"
+          <img src="/images/e-commerce/Logo Inaproc.webp" alt="Inaproc"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo MbizM.webp" alt="MbizM"
+          <img src="/images/e-commerce/Logo MbizM.webp" alt="MbizM"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo PadiUMKM.webp" alt="PaDi UMKM"
+          <img src="/images/e-commerce/Logo PadiUMKM.webp" alt="PaDi UMKM"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo Siplah Blibli.webp" alt="SIPlah Blibli"
+          <img src="/images/e-commerce/Logo Siplah Blibli.webp" alt="SIPlah Blibli"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="../images/e-commerce/Logo Siplah Tokoladang.webp" alt="SIPlah Tokoladang"
+          <img src="/images/e-commerce/Logo Siplah Tokoladang.webp" alt="SIPlah Tokoladang"
             class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
         </div>
       </div>
@@ -462,7 +462,7 @@
           <p class="text-body-md text-on-primary/70 max-w-lg mb-8">
             Mari wujudkan transformasi digital organisasi Anda bersama tim profesional kami
           </p>
-          <a href="contact.html" class="btn-on-dark inline-flex items-center gap-2">
+          <a href="/pages/contact.html" class="btn-on-dark inline-flex items-center gap-2">
             Hubungi Kami Sekarang
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -525,7 +525,7 @@
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-10">
         <div class="md:col-span-5 reveal">
           <div class="flex items-center gap-3 mb-4">
-            <img src="../images/logos/logoaskarindo1-removebg-preview.png" alt="Askarindo Group"
+            <img src="/images/logos/logoaskarindo1-removebg-preview.png" alt="Askarindo Group"
               class="h-8 w-auto brightness-0 invert">
           </div>
           <p class="text-body-sm text-on-primary/60 leading-relaxed max-w-sm">Integrated Procurement Digital Business &
@@ -534,11 +534,11 @@
         <div class="md:col-span-3 reveal">
           <h4 class="text-title-md text-on-primary font-semibold mb-5">Menu</h4>
           <div class="space-y-3 text-body-sm text-on-primary/60">
-            <a href="../index.html" class="block hover:text-on-primary transition-colors">Home</a>
-            <a href="about.html" class="block hover:text-on-primary transition-colors">Tentang Kami</a>
-            <a href="produk.html" class="block hover:text-on-primary transition-colors">Produk</a>
-            <a href="portfolio.html" class="block hover:text-on-primary transition-colors">Portofolio</a>
-            <a href="contact.html" class="block hover:text-on-primary transition-colors">Kontak</a>
+            <a href="/" class="block hover:text-on-primary transition-colors">Home</a>
+            <a href="/pages/about.html" class="block hover:text-on-primary transition-colors">Tentang Kami</a>
+            <a href="/pages/produk.html" class="block hover:text-on-primary transition-colors">Produk</a>
+            <a href="/pages/portfolio.html" class="block hover:text-on-primary transition-colors">Portofolio</a>
+            <a href="/pages/contact.html" class="block hover:text-on-primary transition-colors">Kontak</a>
           </div>
         </div>
         <div class="md:col-span-4 reveal">
@@ -590,21 +590,21 @@
         <p class="text-caption text-on-primary/30 uppercase tracking-widest mb-5 text-center">Klien &amp; Mitra Instansi
         </p>
         <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8">
-          <img src="../images/instansi/Logo Komdigi.webp" alt="Komdigi"
+          <img src="/images/instansi/Logo Komdigi.webp" alt="Komdigi"
             class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="../images/instansi/Logo Kemenag.webp" alt="Kemenag"
+          <img src="/images/instansi/Logo Kemenag.webp" alt="Kemenag"
             class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="../images/instansi/Logo Polri.webp" alt="Polri"
+          <img src="/images/instansi/Logo Polri.webp" alt="Polri"
             class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="../images/instansi/Logo BUMN.webp" alt="BUMN"
+          <img src="/images/instansi/Logo BUMN.webp" alt="BUMN"
             class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="../images/instansi/Logo Angkasa Pura.webp" alt="Angkasa Pura"
+          <img src="/images/instansi/Logo Angkasa Pura.webp" alt="Angkasa Pura"
             class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="../images/instansi/Logo Bank BCA.webp" alt="Bank BCA"
+          <img src="/images/instansi/Logo Bank BCA.webp" alt="Bank BCA"
             class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="../images/instansi/Logo BPJS Kesehatan.webp" alt="BPJS Kesehatan"
+          <img src="/images/instansi/Logo BPJS Kesehatan.webp" alt="BPJS Kesehatan"
             class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="../images/instansi/Logo Astra.webp" alt="Astra"
+          <img src="/images/instansi/Logo Astra.webp" alt="Astra"
             class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
         </div>
       </div>
@@ -615,7 +615,7 @@
     </div>
   </footer>
 
-  <script type="module" src="../src/js/main.js"></script>
+  <script type="module" src="/src/js/main.js"></script>
 </body>
 
 </html>
