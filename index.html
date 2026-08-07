@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Askarindo Group | Integrated Procurement & Technology Solutions</title>
+  <title>Askarindo Group | Integrated Procurement Digital Business & Technology Solutions</title>
   <meta name="description"
     content="Mitra solusi teknologi terintegrasi untuk Pemerintahan, Pendidikan, dan Dunia Usaha. 100+ klien terpercaya di Surabaya, Jawa Timur.">
 
+  <link rel="icon" type="image/png" href="/images/logos/favicon.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
@@ -25,8 +26,12 @@
     <div class="container-custom h-full">
       <nav class="flex items-center justify-between h-full">
         <a href="/" class="flex items-center gap-3 group">
-          <img src="/images/logos/logoaskarindo1-removebg-preview.png" alt="Askarindo Group" class="h-8 w-auto">
-          <span class="font-nav font-bold text-[17px] text-primary max-md:hidden">PT Askarindo Group</span>
+          <img src="/images/logos/logoaskarindo1-removebg-preview.webp" alt="Askarindo Group" class="h-8 w-auto">
+          <div class="flex flex-col max-md:hidden">
+            <span class="font-nav font-bold text-[17px] text-primary leading-tight">Askarindo Group</span>
+            <span class="text-[9px] text-muted font-medium leading-none tracking-normal mt-0.5 max-lg:hidden">Integrated
+              Procurement Digital Business & Technology Solutions</span>
+          </div>
         </a>
 
         <div class="hidden md:flex items-center gap-5 lg:gap-7" text-sm>
@@ -73,37 +78,50 @@
   </div>
 
   <!-- Hero — fullscreen image slider -->
-  <section x-data="heroSlider" class="relative min-h-[85vh] flex items-center overflow-hidden">
+  <section x-data="heroSlider"
+    class="relative min-h-[88vh] pt-28 pb-20 md:pt-36 md:pb-28 flex items-center overflow-hidden">
     <!-- Carousel Background -->
     <div class="absolute inset-0 z-0">
       <template x-for="(img, index) in images" :key="index">
         <img :src="img" alt="Slide" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
           :class="index === current ? 'opacity-100' : 'opacity-0'">
       </template>
-      <div class="absolute inset-0 bg-primary/60"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/60"></div>
     </div>
 
     <!-- Hero Content -->
-    <div class="container-custom relative z-10">
-      <div class="max-w-3xl">
-        <span class="eyebrow text-on-primary/80">Solusi Teknologi Terintegrasi</span>
-        <div class="accent-divider mt-4 mb-6"></div>
-        <h1 class="text-display-xl text-on-primary text-balance mb-6">
-          Integrated Procurement & Technology Solutions
+    <div class="container-custom relative z-10 w-full">
+      <div class="max-w-4xl">
+        <div
+          class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold text-white/90 uppercase tracking-wider mb-6">
+          <span class="w-2 h-2 rounded-full bg-secondary-light animate-pulse"></span>
+          Solusi Teknologi Terintegrasi
+        </div>
+
+        <h1 class="text-display-xl text-on-primary font-extrabold tracking-tight leading-[1.15] mb-6 text-balance">
+          Integrated Procurement Digital Business &amp; Technology Solutions
         </h1>
-        <p class="text-body-md text-on-primary/80 mb-10 max-w-2xl leading-relaxed">
-          Satu mitra terpercaya untuk konsultasi, pengadaan, instalasi, integrasi sistem, hingga layanan purna jual bagi
-          sektor publik dan swasta.
+
+        <div class="accent-divider mb-6" style="--tw-gradient-from: #ffffff; --tw-gradient-to: rgba(255,255,255,0.2);">
+        </div>
+
+        <p class="text-body-md md:text-lg text-on-primary/85 mb-10 max-w-2xl leading-relaxed font-normal">
+          Menghadirkan layanan
+          pengadaan barang dan jasa, solusi transformasi digital, serta integrasi teknologi yang mendukung kebutuhan
+          sektor pemerintahan, pendidikan, perusahaan, dan berbagai institusi dalam satu kemitraan terpercaya.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 mt-2">
-          <a href="/pages/contact.html" class="btn-on-dark inline-flex items-center justify-center gap-2">
-            Diskusikan Kebutuhan Anda
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mt-2">
+          <a href="/pages/contact.html"
+            class="btn-on-dark group inline-flex items-center justify-center gap-2 rounded-lg shadow-lg shadow-black/10 hover:shadow-xl transition-all duration-300">
+            <span>Diskusikan Kebutuhan Anda</span>
+            <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
           </a>
           <a href="/pages/portfolio.html"
-            class="inline-flex items-center justify-center px-7 py-3.5 text-[15px] font-semibold text-white border-2 border-white/30 hover:bg-white hover:text-primary transition-all duration-300">
+            class="inline-flex items-center justify-center px-7 py-3.5 text-[15px] font-semibold text-white border-2 border-white/30 rounded-lg backdrop-blur-sm hover:bg-white hover:text-primary hover:border-white transition-all duration-300">
             Lihat Portofolio
           </a>
         </div>
@@ -113,42 +131,38 @@
   <!-- Logo Marquee — Social Proof -->
   <section class="bg-primary overflow-hidden border-t border-white/10"
     style="mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);">
-    <div class="max-w-7xl mx-auto px-4 py-4 md:py-6">
+    <div class="max-w-7xl mx-auto px-2 py-2 md:py-3">
       <div class="marquee-wrapper overflow-hidden">
-        <div class="marquee-track items-center gap-12 md:gap-20">
-          <img src="/images/e-commerce/Logo Bela Gratis Ongkir.webp" alt="Bela Gratis Ongkir"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo Blangkon Jateng.webp" alt="Blangkon Jateng"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo Digipay.webp" alt="Digipay"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo Inaproc.webp" alt="Inaproc"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo MbizM.webp" alt="MbizM"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo PadiUMKM.webp" alt="PaDi UMKM"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo Siplah Blibli.webp" alt="SIPlah Blibli"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo Siplah Tokoladang.webp" alt="SIPlah Tokoladang"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+        <div class="marquee-track items-center gap-3 md:gap-4">
+          <img src="/images/e-commerce/1.webp" alt="Bela Gratis Ongkir"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/2.webp" alt="Blangkon Jateng"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/3.webp" alt="Digipay"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/4.webp" alt="Inaproc"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/5.webp" alt="MbizM"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/6.webp" alt="PaDi UMKM"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/7.webp" alt="SIPlah Blibli"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
           <!-- Duplicated for seamless loop -->
-          <img src="/images/e-commerce/Logo Bela Gratis Ongkir.webp" alt="Bela Gratis Ongkir"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo Blangkon Jateng.webp" alt="Blangkon Jateng"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo Digipay.webp" alt="Digipay"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo Inaproc.webp" alt="Inaproc"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo MbizM.webp" alt="MbizM"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo PadiUMKM.webp" alt="PaDi UMKM"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo Siplah Blibli.webp" alt="SIPlah Blibli"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
-          <img src="/images/e-commerce/Logo Siplah Tokoladang.webp" alt="SIPlah Tokoladang"
-            class="h-6 md:h-8 w-auto flex-shrink-0 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/1.webp" alt="Bela Gratis Ongkir"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/2.webp" alt="Blangkon Jateng"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/3.webp" alt="Digipay"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/4.webp" alt="Inaproc"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/5.webp" alt="MbizM"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/6.webp" alt="PaDi UMKM"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
+          <img src="/images/e-commerce/7.webp" alt="SIPlah Blibli"
+            class="h-8 md:h-10 w-28 md:w-36 object-contain flex-shrink-0 brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-300">
         </div>
       </div>
     </div>
@@ -160,13 +174,13 @@
       <div class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-hairline">
         <div class="flex-1 py-12 md:py-16 text-center reveal">
           <div class="text-display-sm text-primary font-bold">
-            <span x-data="counter(100)" x-text="Math.round(current) + '+'">0</span>
+            <span x-data="counter(989)" x-text="Math.round(current) + '+'">0</span>
           </div>
           <div class="text-label-uppercase text-muted mt-3">Klien Terpercaya</div>
         </div>
         <div class="flex-1 py-12 md:py-16 text-center reveal">
           <div class="text-display-sm text-primary font-bold">
-            <span x-data="counter(500)" x-text="Math.round(current) + '+'">0</span>
+            <span x-data="counter(650)" x-text="Math.round(current) + '+'">0</span>
           </div>
           <div class="text-label-uppercase text-muted mt-3">Proyek Selesai</div>
         </div>
@@ -239,17 +253,22 @@
           <h2 class="text-display-lg text-primary mt-4 mb-8">
             Satu mitra, semua kebutuhan teknologi Anda.
           </h2>
-          <div class="space-y-5 text-body-md text-body leading-relaxed">
+          <div class="space-y-4 text-body-md text-body leading-relaxed">
             <p>
-              Askarindo Group adalah System Integrator dan Pengadaan Barang & Jasa
-              yang melayani sektor Pemerintahan, Pendidikan, BUMN/BUMD, dan Perusahaan Swasta.
-              Kami bekerja dengan model <em>solution-based procurement</em> klien menyampaikan
-              kebutuhan, kami mencarikan produk dan vendor yang tepat sekaligus menawarkan
-              paket solusi terintegrasi.
+              Askarindo Group merupakan perusahaan System Integrator dan Penyedia Pengadaan
+              Barang &amp; Jasa yang menghadirkan solusi terintegrasi bagi sektor Pemerintahan, Pendidikan,
+              BUMN/BUMD, dan Perusahaan Swasta di seluruh Indonesia.
             </p>
             <p>
-              Pendekatan One Stop Solution kami mencakup konsultasi, pengadaan, instalasi,
-              integrasi sistem, pelatihan, hingga layanan purna jual.
+              Kami mengusung pendekatan <em>solution-based procurement</em>, di mana setiap
+              kebutuhan pelanggan dianalisis secara menyeluruh untuk menghadirkan produk, teknologi, dan layanan
+              yang paling sesuai. Tidak hanya menyediakan barang, kami juga memastikan setiap solusi mampu
+              mendukung efisiensi, produktivitas, dan keberhasilan operasional.
+            </p>
+            <p>
+              Melalui konsep <strong>One Stop Solution</strong>, Askarindo Group menyediakan layanan
+              <em>end-to-end</em> yang meliputi konsultasi, perencanaan, pengadaan, implementasi,
+              integrasi sistem, pelatihan pengguna, hingga layanan purna jual yang berkelanjutan.
             </p>
           </div>
 
@@ -265,13 +284,14 @@
           </div>
           <div class="grid grid-cols-2 gap-4 mt-6">
             <div class="stat-cell">
-              <div class="text-display-sm text-primary font-bold">100+</div>
+              <div class="text-display-sm text-primary font-bold">989+</div>
               <div class="text-label-uppercase text-muted mt-1">Klien</div>
             </div>
             <div class="stat-cell">
-              <div class="text-display-sm text-primary font-bold">500+</div>
+              <div class="text-display-sm text-primary font-bold">650+</div>
               <div class="text-label-uppercase text-muted mt-1">Proyek</div>
             </div>
+
           </div>
         </div>
       </div>
@@ -455,7 +475,7 @@
             <span class="text-title-md md:text-title-lg text-white font-bold block">Lihat Semua Produk</span>
             <span
               class="inline-flex items-center gap-2 text-caption text-white/50 group-hover:text-white/90 transition-all mt-2">
-              <span>Jelajahi</span>
+              <span>Setuju</span>
               <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor"
                 viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -493,7 +513,7 @@
                   d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
                 </path>
               </svg>
-              Chat WhatsApp
+              Chat Customer Service
             </a>
             <a href="/pages/contact.html"
               class="btn-secondary-outline !border-on-primary/40 !text-on-primary hover:!bg-on-primary hover:!text-primary">
@@ -514,7 +534,7 @@
                 </div>
                 <div>
                   <p class="text-body-sm text-on-primary/80">0858-5454-2007</p>
-                  <p class="text-caption text-on-primary/50">WhatsApp</p>
+                  <p class="text-caption text-on-primary/50">Customer Service</p>
                 </div>
               </div>
               <div class="flex items-center gap-3">
@@ -557,11 +577,15 @@
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-10">
         <div class="md:col-span-5 reveal">
           <div class="flex items-center gap-3 mb-4">
-            <img src="/images/logos/logoaskarindo1-removebg-preview.png" alt="Askarindo Group"
-              class="h-8 w-auto brightness-0 invert">
+            <img src="/images/logos/logoaskarindo1-removebg-preview.webp" alt="Askarindo Group"
+              class="h-9 w-auto brightness-0 invert">
+            <span
+              class="text-title-md md:text-title-lg font-bold text-on-primary tracking-tight leading-tight">Askarindo
+              Group</span>
           </div>
-          <p class="text-body-sm text-on-primary/60 leading-relaxed max-w-sm">Integrated Procurement Digital Business &
-            Technology Solutions. Mitra terpercaya untuk solusi teknologi terintegrasi.</p>
+          <p class="text-body-sm text-on-primary/60 leading-relaxed max-w-sm">
+            Integrated Procurement Digital Business &amp; Technology Solutions
+          </p>
         </div>
         <div class="md:col-span-3 reveal">
           <h4 class="text-title-md text-on-primary font-semibold mb-5">Menu</h4>
@@ -598,7 +622,7 @@
               </svg>
               <div>
                 <a href="https://wa.me/6285854542007" class="hover:text-on-primary transition-colors">0858-5454-2007</a>
-                <p class="text-on-primary/40">WhatsApp</p>
+                <p class="text-on-primary/40">Customer Service</p>
               </div>
             </div>
             <div class="flex items-start gap-3">
@@ -623,22 +647,54 @@
         <p class="text-caption text-on-primary/30 uppercase tracking-widest mb-5 text-center">Klien &amp; Mitra Instansi
         </p>
         <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8">
-          <img src="/images/instansi/Logo Komdigi.webp" alt="Komdigi"
-            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="/images/instansi/Logo Kemenag.webp" alt="Kemenag"
-            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="/images/instansi/Logo Polri.webp" alt="Polri"
-            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="/images/instansi/Logo BUMN.webp" alt="BUMN"
-            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="/images/instansi/Logo Angkasa Pura.webp" alt="Angkasa Pura"
-            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="/images/instansi/Logo Bank BCA.webp" alt="Bank BCA"
-            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="/images/instansi/Logo BPJS Kesehatan.webp" alt="BPJS Kesehatan"
-            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
-          <img src="/images/instansi/Logo Astra.webp" alt="Astra"
-            class="h-6 w-auto object-contain brightness-0 invert opacity-30 hover:opacity-70 transition-opacity duration-200">
+          <img src="/images/instansi/1_converted.webp" alt="Bank Jatim"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/2_converted.webp" alt="Angkasa Pura"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/3_converted.webp" alt="Astra"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/4_converted.webp" alt="BKD"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/5_converted.webp" alt="BPJS Kesehatan"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/6_converted.webp" alt="BPJS Ketenagakerjaan"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/7_converted.webp" alt="BPOM"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/8_converted.webp" alt="BUMN"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/9_converted.webp" alt="Bank BCA"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/10_converted.webp" alt="CIMB Niaga"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/11_converted.webp" alt="Dinas Pendidikan"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/12_converted.webp" alt="Disnaker"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/13_converted.webp" alt="Koperasi Indonesia"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/14_converted.webp" alt="Kementerian Agama"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/15_converted.webp" alt="Kementerian Pertahanan"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/16_converted.webp" alt="Kementerian Kesehatan"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/17_converted.webp" alt="Kementerian Sosial"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/18_converted.webp" alt="Kimia Farma"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/19_converted.webp" alt="Komdigi"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/20_converted.webp" alt="POS Indonesia"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/21_converted.webp" alt="Polri"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/22_converted.webp" alt="Prudential"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/23_converted.webp" alt="Ristekdikti"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
+          <img src="/images/instansi/24_converted.webp" alt="Taspen"
+            class="h-7 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200">
         </div>
       </div>
       <div

@@ -120,10 +120,10 @@ document.addEventListener('DOMContentLoaded', () => {
 Alpine.data('heroSlider', () => ({
   current: 0,
   images: [
-    '/images/slider/WhatsApp Image 2026-03-18 at 21.29.59.jpeg',
-    '/images/slider/Gemini_Generated_Image_r9amtgr9amtgr9am.png',
-    '/images/slider/Gemini_Generated_Image_n49kg6n49kg6n49k.png',
-    '/images/slider/784dd277-f2f0-4112-8739-c16767875997 (1).jpg'
+    '/images/slider/WhatsApp Image 2026-03-18 at 21.29.59.webp',
+    '/images/slider/Gemini_Generated_Image_r9amtgr9amtgr9am.webp',
+    '/images/slider/Gemini_Generated_Image_n49kg6n49kg6n49k.webp',
+    '/images/slider/784dd277-f2f0-4112-8739-c16767875997 (1).webp'
   ],
   init() {
     setInterval(() => {
